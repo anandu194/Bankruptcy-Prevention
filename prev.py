@@ -67,9 +67,7 @@ def graph1(choice):
             
 #-------------------------------------------------------------------------------------------------------------------------------    
 
-# Blog func:
-def myinfo():
-    st.write("My name is Kasi Vinoth S and I am a Data Science enthusiast. \n Check out my blog on this Model Deployment - [article link](https://medium.com/@vino24995/deployment-of-your-model-on-heroku-web-using-streamlit-library-e76f9c73ed86)")
+
 #-------------------------------------------------------------------------------------------------------------------------------
 
 #Input func:
@@ -156,7 +154,16 @@ def main():
             #myinfo()
         expander=st.expander("My info",expanded=False)
         with expander:
-            st.info("My name is Kasi Vinoth S and I am a Data Science enthusiast. \n Check out my blog on this Model Deployment - [article link](https://medium.com/@vino24995/deployment-of-your-model-on-heroku-web-using-streamlit-library-e76f9c73ed86)")
+           Team Details:
+    with col5:
+        expander=st.expander("Team Details",expanded=False)
+        with expander:
+            st.info("Anand")
+            st.info("Hari")
+            st.info("Kasi")
+            st.info("Neha")
+            st.info("Nileena")
+            st.info("Vishal")
 #-------------------------------------------------------------------------------------------------------------------------------
 
 # Program Starts:
