@@ -151,7 +151,7 @@ def main():
 # My info:
     with col5:
         expander=st.expander("Team Details",expanded=False)
-            with expander:
+           with expander:
                 st.info("Anand")
                 st.info("Hari")
                 st.info("Kasi")
