@@ -151,13 +151,13 @@ def main():
 # My info:
     with col5:
         expander=st.expander("Team Details",expanded=False)
-           with expander:
-                st.info("Anand")
-                st.info("Hari")
-                st.info("Kasi")
-                st.info("Neha")
-                st.info("Nileena")
-                st.info("Vishal")
+        with expander:
+             st.info("Anand")
+             st.info("Hari")
+             st.info("Kasi")
+             st.info("Neha")
+             st.info("Nileena")
+             st.info("Vishal")
 #-------------------------------------------------------------------------------------------------------------------------------
 
 # Program Starts:
