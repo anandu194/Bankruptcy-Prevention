@@ -33,9 +33,9 @@ st.write("""
          """)
 
 # Model Prediction func:
-def predict_bankruptcy(industrial_risk,management_risk,financial_flexibility,credibility,competitiveness,operating_risk):
+def predict_bankruptcy(i,m,f,cr,co,o):
     
-    pred=model.predict([[industrial_risk,management_risk,financial_flexibility,credibility,competitiveness,operating_risk]])
+    pred=model.predict([[i,m,f,cr,co,o]])
     prediction = (pred >=0.9995045) 
     prediction=1*prediction
     print(prediction)
@@ -106,7 +106,7 @@ def main():
     with col3:
         check=st.checkbox("Input Values for Features",value=False)
         if check:
-            input_data()
+             i,m,f,cr,co,o=input_data()
         
     #---------------------------------------------------------------------------------------------------------------------------
 
@@ -115,7 +115,7 @@ def main():
             if st.button("Predict"):
                 with st.spinner('Wait for it...'):
                     time.sleep(3)
-                result=predict_bankruptcy(industrial_risk,management_risk,financial_flexibility,credibility,competitiveness,operating_risk)
+                result=predict_bankruptcy(i,m,f,cr,co,o)
             
             if result==0:
                 result='BANKRUPTED!!'
