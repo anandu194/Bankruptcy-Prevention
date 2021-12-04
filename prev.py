@@ -106,7 +106,7 @@ def main():
     with col3:
         check=st.checkbox("Input Values for Features",value=False)
         if check:
-             i,m,f,cr,co,o=input_data()
+            i,m,f,cr,co,o=input_data()
         
     #---------------------------------------------------------------------------------------------------------------------------
 
